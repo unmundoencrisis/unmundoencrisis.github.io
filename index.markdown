@@ -30,9 +30,9 @@ layout: default
         </div>
         <div class="column">
 
-            <!-- <a href="https://archive.org/download/{{ columna.mp3 }}" class="button is-danger has-left"> escuchar</a> -->
+           <!-- <a href="https://archive.org/download/{{ columna.mp3 }}" class="button is-danger has-left"> escuchar</a> -->
 
--            <div class="container-audio">
+            <div class="container-audio">
              <audio controls>
                 <source src="https://archive.org/download/{{ columna.mp3 }}" type="audio/mp3" preload="none"></audio>
             </div>
