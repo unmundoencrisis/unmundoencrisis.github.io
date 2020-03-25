@@ -10,12 +10,12 @@ body {
     position: fixed;
     z-index: 999;
     padding-top: 20px;
-    width: 300px;
+    width: max-content;
     height: 20px;
     margin: 0 auto;
     top: unset;
     right: 0px;
-    bottom: 65px;
+    bottom: 9%;
     left: 0px;
 }
 
