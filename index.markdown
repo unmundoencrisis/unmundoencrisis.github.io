@@ -18,24 +18,11 @@ layout: default
 {% for columna in site.data.columnas %}
 
 <article class="message">
-
-    <div class="message-header">
-        <p>{{ columna.title }} ({{ columna.date }})</p>
-    </div>
-
+    <a onClick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
     <div class="message-body">
-        <div class="columns">
-            <div class="column is-four-fifths">
-                <p>{{ columna.title }} {{ columna.subtitle }}</p>
-            </div>
-
-    <div class="column">
-        <button onClick="playMp3('https://archive.org/download/{{ columna.mp3 }}')" class="button is-danger has-left"> escuchar</button>
+    {% include play-circle.svg %} ({{ columna.date }}) {{ columna.title }} {{ columna.subtitle }} ({{ columna.min }}min)
     </div>
-
-    </div>
-
-</div>
+    </a>
 </article>
 
 {% endfor %}

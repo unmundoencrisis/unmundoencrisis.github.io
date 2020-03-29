@@ -1,9 +1,10 @@
 :root {
     --main-color: red;
+    --dark-color: #343436;
 }
 
 body {
-    background: #343436;
+    background: var(--dark-color);
 }
 
 .streaming {
@@ -24,9 +25,12 @@ body {
 }
 
 .message {
-    margin-top: 3rem;
+    //margin-top: 0.25rem;
 }
 
+.hero {
+    margin-bottom: 1rem
+}
 .hero.is-info {
     background-color: var(--main-color);
 }
@@ -45,4 +49,8 @@ body {
 .has-bg-img {
     background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("/img/UnMundoEnCrisis.jpg") no-repeat center center ;
     background-size:cover; position: relative;
+}
+
+.footer {
+    margin-top: 1rem;
 }
