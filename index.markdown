@@ -20,7 +20,7 @@ layout: default
 <article class="message">
 
     <div class="message-body" onclick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
-    {% include play-circle.svg %} ({{ columna.date }}) {{ columna.title }} {{ columna.subtitle }} ({{ columna.min }} min)
+    {% include play-circle.svg %} ({{ columna.date }}) <strong>{{ columna.title }}</strong> {{ columna.subtitle }} <i>({{ columna.min }} min)</i>
     </div>
 
 </article>

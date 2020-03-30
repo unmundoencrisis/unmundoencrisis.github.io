@@ -1,5 +1,6 @@
 :root {
-    --main-color: red;
+    //--main-color: red;
+    --main-color: #db4a37;
     --dark-color: #343436;
 }
 
@@ -57,8 +58,10 @@ body {
     background-color: hsl(0, 0%, 93%);
 }
 .has-bg-img {
-    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("/img/UnMundoEnCrisis.jpg") no-repeat center center ;
-    background-size:cover; position: relative;
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("/img/UnMundoEnCrisis.jpg") no-repeat center center;
+    background-size: contain;
+    background-position: relative;
+    background-attachment: fixed;
 }
 
 .footer {
