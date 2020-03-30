@@ -18,11 +18,11 @@ layout: default
 {% for columna in site.data.columnas %}
 
 <article class="message">
-    <a onClick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
-    <div class="message-body">
-    {% include play-circle.svg %} ({{ columna.date }}) {{ columna.title }} {{ columna.subtitle }} ({{ columna.min }}min)
+
+    <div class="message-body" onclick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
+    {% include play-circle.svg %} ({{ columna.date }}) {{ columna.title }} {{ columna.subtitle }} ({{ columna.min }} min)
     </div>
-    </a>
+
 </article>
 
 {% endfor %}

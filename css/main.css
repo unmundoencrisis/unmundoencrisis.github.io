@@ -39,6 +39,16 @@ body {
     background-color: var(--main-color);
 }
 
+.message-body {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px 20px;
+}
+
+.message-body:hover {
+    background-color: var(--main-color);
+}
 .button.is-danger {
     background-color: var(--main-color);
 }
