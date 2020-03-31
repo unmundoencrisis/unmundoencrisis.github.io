@@ -17,13 +17,23 @@ layout: default
 
 {% for columna in site.data.columnas %}
 
-<article class="message">
-
-    <div class="message-body" onclick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
-    {% include play-circle.svg %} ({{ columna.date }}) <strong>{{ columna.title }}</strong> {{ columna.subtitle }} <i>({{ columna.min }} min)</i>
+<div class="box" onclick="playMp3('https://archive.org/download/{{ columna.mp3 }}')">
+  <article class="media">
+    <div class="media-left">
+          {% include play-circle.svg %}
     </div>
-
-</article>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>{{ columna.title }}</strong>
+          {{ columna.subtitle }}
+          {{ columna.date }}
+          ({{ columna.min }} min)
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
 
 {% endfor %}
 

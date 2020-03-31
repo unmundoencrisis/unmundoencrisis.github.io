@@ -4,6 +4,9 @@
     --dark-color: #343436;
 }
 
+strong {
+    color: white;
+}
 body {
     background: var(--dark-color);
 }
@@ -49,6 +52,21 @@ body {
 
 .message-body:hover {
     background-color: var(--main-color);
+}
+
+.box {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px 20px;
+}
+
+.box:hover {
+    background-color: var(--main-color);
+}
+
+.media {
+    color: white;
 }
 .button.is-danger {
     background-color: var(--main-color);
