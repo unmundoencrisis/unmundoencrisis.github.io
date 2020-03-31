@@ -60,7 +60,7 @@ body {
     color: white;
     margin: 10px 10px !important;
     padding: 10px 20px;
-    border-left: solid 2px white;
+    border-left: solid 1px white;
 }
 
 .box:hover {
